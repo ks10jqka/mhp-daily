@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHP Daily Summary â 2026-06-01</title>
+<title>MHP Daily Summary — 2026-06-01</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -36,7 +36,7 @@
     color: #6D28D9; font-weight: 700;
   }
 
-  /* KPI ì¹´ë */
+  /* KPI 카드 */
   .kpi-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -57,7 +57,7 @@
   .dn { color: #DC2626 !important; font-size: 10px; font-weight: 700; }
   .up { color: #15803D !important; font-size: 10px; font-weight: 700; }
 
-  /* í¨ë */
+  /* 패널 */
   .panels   { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
   .panel3   { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
   .panel    { background: #fff; border: 1px solid #E5E7EB; border-radius: 12px; overflow: hidden; }
@@ -65,7 +65,7 @@
   .ph-dot   { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .ph-text  { font-size: 12px; font-weight: 800; color: #0F172A; letter-spacing: 0.01em; }
 
-  /* íì´ë¸ */
+  /* 테이블 */
   table { width: 100%; border-collapse: collapse; }
   thead th {
     font-size: 10px; font-weight: 700; color: #6B7280;
@@ -144,22 +144,22 @@
   .badge-check { background: #DBEAFE; color: #1D4ED8; }
   .insight-row b { font-weight: 700; color: #111; }
 
-  /* ì¤íí¬ë¼ì¸ */
+  /* 스파크라인 */
   .spark { margin-top: 10px; overflow: hidden; border-radius: 4px; }
   .spark svg { width: 100%; height: 46px; display: block; }
 
-  /* ââ ë°ìí ââ */
+  /* ── 반응형 ── */
   @media (max-width: 680px) {
     body { padding: 16px; }
 
-    /* KPI: 2ì´ */
+    /* KPI: 2열 */
     .kpi-row { grid-template-columns: 1fr 1fr; }
 
-    /* í¨ë: 1ì´ */
+    /* 패널: 1열 */
     .panels { grid-template-columns: 1fr; }
     .panel3 { grid-template-columns: 1fr; }
 
-    /* íì´ë¸ í¨ë© ì¶ì */
+    /* 테이블 패딩 축소 */
     thead th { padding: 5px 8px; font-size: 9px; }
     tbody td  { padding: 6px 8px; font-size: 11px; }
     tbody td:first-child { font-size: 10px; }
@@ -167,19 +167,19 @@
     .rt tbody td  { padding: 4px 8px; font-size: 11px; }
     .rt tbody td:first-child { white-space: normal; }
 
-    /* ì¸ì¬ì´í¸ */
+    /* 인사이트 */
     .insight-box { padding: 12px 14px; }
     .insight-row { font-size: 12px; }
 
-    /* KPI ê° í¬ê¸° ì¡°ì  */
+    /* KPI 값 크기 조정 */
     .kpi-val { font-size: 22px; }
 
-    /* í¸í° */
+    /* 푸터 */
     .footer { justify-content: flex-start; flex-wrap: wrap; gap: 10px; }
   }
 
   @media (max-width: 400px) {
-    /* KPI: 1ì´ */
+    /* KPI: 1열 */
     .kpi-row { grid-template-columns: 1fr; }
   }
 </style>
@@ -189,34 +189,34 @@
 <div class="topbar">
   <div>
     <h1>MHP Daily Summary</h1>
-    <p style="color:#4C1D95; font-weight:800; font-size:14px; margin-top:4px; letter-spacing:0.01em;">2026-06-01 (ì) ê¸°ì¤</p>
+    <p style="color:#4C1D95; font-weight:800; font-size:14px; margin-top:4px; letter-spacing:0.01em;">2026-06-01 (월) 기준</p>
   </div>
 </div>
 
-<!-- ì¸ì¬ì´í¸ ìì½ -->
+<!-- 인사이트 요약 -->
 <div class="insight-box">
   <div class="insight-row">
-    <span class="insight-badge badge-warn">ì£¼ì</span>
-    <span>NU -10.1%(vs 7ì¼ì ) ì§ì ê°ì â <b>ê´ê³ ë¹ $17,579 vs $15,375, CPI í¨ì¨ ì ê² íì</b></span>
+    <span class="insight-badge badge-warn">주의</span>
+    <span>NU -10.1%(vs 7일전) 지속 감소 — <b>광고비 $17,579 vs $15,375, CPI 효율 점검 필요</b></span>
   </div>
   <div class="insight-row">
-    <span class="insight-badge badge-good">ê¸ì </span>
-    <span>Revenue +3.7%(vs 7ì¼ì ) ëì¼ ìì¼ ê°ì  â <b>IAA $6,263, ì ì£¼ ëë¹ ê²¬ì¡° ì ì§</b></span>
+    <span class="insight-badge badge-good">긍정</span>
+    <span>Revenue +3.7%(vs 7일전) 동일 요일 개선 — <b>IAA $6,263, 전주 대비 견조 유지</b></span>
   </div>
   <div class="insight-row">
-    <span class="insight-badge badge-check">íì¸</span>
-    <span>Web DAU 2,265(vs 685 ì ì£¼ ì) â <b>3ë°° ì´ì ê¸ì¦, ì ì ê²½ë¡ ìì¸ íì íì</b></span>
+    <span class="insight-badge badge-check">확인</span>
+    <span>Web DAU 2,265(vs 685 전주 월) — <b>3배 이상 급증, 유입 경로 원인 파악 필요</b></span>
   </div>
 </div>
 
-<!-- KPI ì¹´ë -->
+<!-- KPI 카드 -->
 <div class="kpi-row">
   <div class="kpi">
     <div class="kpi-label">DAU</div>
     <div class="kpi-val">192,701</div>
     <div class="kpi-compare">
-      <span>1ì¼ì  <b>190,006</b> <span class="up">â²1.4%</span></span>
-      <span>7ì¼ì  <b>194,215</b> <span class="dn">â¼0.8%</span></span>
+      <span>1일전 <b>190,006</b> <span class="up">▲1.4%</span></span>
+      <span>7일전 <b>194,215</b> <span class="dn">▼0.8%</span></span>
     </div>
     <div class="spark"><svg viewBox="0 0 120 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="g-dau" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3B82F6" stop-opacity="0.15"/><stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/></linearGradient></defs>
@@ -228,8 +228,8 @@
     <div class="kpi-label">Revenue <span style="font-weight:500; color:#9CA3AF;">(IAP + IAA)</span></div>
     <div class="kpi-val">$60,865</div>
     <div class="kpi-compare">
-      <span>1ì¼ì  <b>$65,493</b> <span class="dn">â¼7.1%</span></span>
-      <span>7ì¼ì  <b>$58,714</b> <span class="up">â²3.7%</span></span>
+      <span>1일전 <b>$65,493</b> <span class="dn">▼7.1%</span></span>
+      <span>7일전 <b>$58,714</b> <span class="up">▲3.7%</span></span>
     </div>
     <div class="spark"><svg viewBox="0 0 120 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="g-rev" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.15"/><stop offset="100%" stop-color="#10B981" stop-opacity="0"/></linearGradient></defs>
@@ -241,8 +241,8 @@
     <div class="kpi-label">ARPDAU / PUR / ARPPU</div>
     <div class="kpi-val" style="font-size:18px">0.283 <span style="font-size:13px;color:#6B7280;font-weight:400">/ 2.08% / $13.62</span></div>
     <div class="kpi-compare">
-      <span>1ì¼ì  <b>0.310</b> <span class="dn">â¼8.7%</span></span>
-      <span>7ì¼ì  <b>0.265</b> <span class="up">â²6.8%</span></span>
+      <span>1일전 <b>0.310</b> <span class="dn">▼8.7%</span></span>
+      <span>7일전 <b>0.265</b> <span class="up">▲6.8%</span></span>
     </div>
     <div class="spark"><svg viewBox="0 0 120 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="g-arp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6D28D9" stop-opacity="0.15"/><stop offset="100%" stop-color="#6D28D9" stop-opacity="0"/></linearGradient></defs>
@@ -254,13 +254,13 @@
     <div class="kpi-label">NU</div>
     <div class="kpi-val">5,935</div>
     <div class="kpi-compare">
-      <span>1ì¼ì  <b>6,076</b> <span class="dn">â¼2.3%</span></span>
-      <span>7ì¼ì  <b>6,598</b> <span class="dn">â¼10.1%</span></span>
+      <span>1일전 <b>6,076</b> <span class="dn">▼2.3%</span></span>
+      <span>7일전 <b>6,598</b> <span class="dn">▼10.1%</span></span>
     </div>
     <div class="spark"><svg viewBox="0 0 120 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="g-nu" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.15"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/></linearGradient></defs>
       <polygon fill="url(#g-nu)" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22.8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40 120,44 0,44"/>
-      <polyline fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22.8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40"/>
+      <polyline fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22 8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40"/>
     </svg></div>
   </div>
 </div>
@@ -273,7 +273,7 @@
       <div class="ph-text" style="color:#1D4ED8;">DAU</div>
     </div>
     <table>
-      <thead><tr><th></th><th class="main-h">06-01 (ì)</th><th>05-31 (ì¼)</th><th>05-25 (ì)</th></tr></thead>
+      <thead><tr><th></th><th class="main-h">06-01 (월)</th><th>05-31 (일)</th><th>05-25 (월)</th></tr></thead>
       <tbody>
         <tr class="total"><td>Total</td><td class="mv">192,701</td><td>190,006</td><td>194,215</td></tr>
         <tr><td class="sv">AOS</td><td class="smv">148,719</td><td class="sv">147,237</td><td class="sv">151,104</td></tr>
