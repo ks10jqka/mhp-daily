@@ -151,35 +151,22 @@
   /* ── 반응형 ── */
   @media (max-width: 680px) {
     body { padding: 16px; }
-
-    /* KPI: 2열 */
     .kpi-row { grid-template-columns: 1fr 1fr; }
-
-    /* 패널: 1열 */
     .panels { grid-template-columns: 1fr; }
     .panel3 { grid-template-columns: 1fr; }
-
-    /* 테이블 패딩 축소 */
     thead th { padding: 5px 8px; font-size: 9px; }
     tbody td  { padding: 6px 8px; font-size: 11px; }
     tbody td:first-child { font-size: 10px; }
     .rt thead th { padding: 4px 8px; font-size: 9px; }
     .rt tbody td  { padding: 4px 8px; font-size: 11px; }
     .rt tbody td:first-child { white-space: normal; }
-
-    /* 인사이트 */
     .insight-box { padding: 12px 14px; }
     .insight-row { font-size: 12px; }
-
-    /* KPI 값 크기 조정 */
     .kpi-val { font-size: 22px; }
-
-    /* 푸터 */
     .footer { justify-content: flex-start; flex-wrap: wrap; gap: 10px; }
   }
 
   @media (max-width: 400px) {
-    /* KPI: 1열 */
     .kpi-row { grid-template-columns: 1fr; }
   }
 </style>
@@ -260,7 +247,7 @@
     <div class="spark"><svg viewBox="0 0 120 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs><linearGradient id="g-nu" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.15"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/></linearGradient></defs>
       <polygon fill="url(#g-nu)" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22.8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40 120,44 0,44"/>
-      <polyline fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22 8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40"/>
+      <polyline fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="0,4 4,9.1 8,19.9 12,17.9 16,24.5 20,25.9 24,31.2 28,29.1 32,22.8 36,29.3 40,11.1 44,26.2 48,21.2 52,26.3 56,18.1 60,23.9 64,34.4 68,29 72,28.4 76,24.8 80,30.2 84,33.2 88,23.6 92,30.6 96,32.2 100,39.2 104,39.7 108,36.6 112,39.6 116,38 120,40"/>
     </svg></div>
   </div>
 </div>
@@ -279,4 +266,104 @@
         <tr><td class="sv">AOS</td><td class="smv">148,719</td><td class="sv">147,237</td><td class="sv">151,104</td></tr>
         <tr><td class="sv">iOS</td><td class="smv">40,314</td><td class="sv">39,368</td><td class="sv">40,982</td></tr>
         <tr><td class="sv">Web</td><td class="smv">2,265</td><td class="sv">1,988</td><td class="sv">685</td></tr>
-        <tr><td class="sv">AOS Royal</td><td class="s
+        <tr><td class="sv">AOS Royal</td><td class="smv">1,698</td><td class="sv">1,688</td><td class="sv">1,731</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <div class="ph" style="background:#ECFDF5; border-bottom-color:#A7F3D0;">
+      <div class="ph-dot" style="background:#10B981"></div>
+      <div class="ph-text" style="color:#047857;">Revenue <span style="font-weight:500; color:#6B7280; font-size:11px;">(IAP + IAA)</span></div>
+    </div>
+    <table>
+      <thead><tr><th></th><th class="main-h">06-01 (월)</th><th>05-31 (일)</th><th>05-25 (월)</th></tr></thead>
+      <tbody>
+        <tr class="total"><td>Total</td><td class="mv">60,865</td><td>65,493</td><td>58,714</td></tr>
+        <tr><td class="sv">AOS</td><td class="smv">32,697</td><td class="sv">38,510</td><td class="sv">32,935</td></tr>
+        <tr><td class="sv">iOS</td><td class="smv">15,736</td><td class="sv">16,012</td><td class="sv">13,821</td></tr>
+        <tr><td class="sv">Web(Xsolla)</td><td class="smv">127</td><td class="sv">281</td><td class="sv">488</td></tr>
+        <tr><td class="sv">IAA</td><td class="smv">6,263</td><td class="sv">6,510</td><td class="sv">7,293</td></tr>
+        <tr style="background:#F8FAFC;"><td class="sv" style="border-top:1px solid #CBD5E1 !important;">Xsolla</td><td class="smv" style="border-top:1px solid #CBD5E1 !important;">6,168</td><td class="sv" style="border-top:1px solid #CBD5E1 !important;">4,459</td><td class="sv" style="border-top:1px solid #CBD5E1 !important;">4,664</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 접속지표(좌) + 매출지표(우) -->
+<div class="panels" style="margin-bottom:10px;">
+  <div class="panel">
+    <div class="ph" style="background:#FEF2F2; border-bottom-color:#FECACA;">
+      <div class="ph-dot" style="background:#EF4444"></div>
+      <div class="ph-text" style="color:#B91C1C;">접속 지표</div>
+    </div>
+    <table>
+      <thead><tr><th></th><th class="main-h">06-01 (월)</th><th>05-31 (일)</th><th>05-25 (월)</th></tr></thead>
+      <tbody>
+        <tr><td>동접 최고</td><td class="mv">8,994</td><td>8,942</td><td>8,941</td></tr>
+        <tr><td>동접 평균</td><td class="mv">7,134</td><td>7,192</td><td>7,302</td></tr>
+        <tr><td>동접 최저</td><td class="mv">5,253</td><td>5,743</td><td>5,411</td></tr>
+        <tr><td>평균 접속</td><td class="mv">2.778</td><td>2.751</td><td>2.797</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <div class="ph" style="background:#F5F3FF; border-bottom-color:#DDD6FE;">
+      <div class="ph-dot" style="background:#8B5CF6"></div>
+      <div class="ph-text" style="color:#6D28D9;">매출 지표</div>
+    </div>
+    <table>
+      <thead><tr><th></th><th class="main-h">06-01 (월)</th><th>05-31 (일)</th><th>05-25 (월)</th></tr></thead>
+      <tbody>
+        <tr><td>DPU</td><td class="mv">4,009</td><td>4,096</td><td>3,866</td></tr>
+        <tr><td>PUR</td><td class="mv">2.08%</td><td>2.16%</td><td>1.99%</td></tr>
+        <tr><td>ARPPU</td><td class="mv">13.62</td><td>14.40</td><td>13.30</td></tr>
+        <tr><td>ARPDAU</td><td class="mv">0.283</td><td>0.310</td><td>0.265</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- NU지표(좌) + 리텐션(우) -->
+<div class="panels" style="align-items:start;">
+  <div class="panel">
+    <div class="ph" style="background:#FFFBEB; border-bottom-color:#FDE68A;">
+      <div class="ph-dot" style="background:#F59E0B"></div>
+      <div class="ph-text" style="color:#B45309;">NU 지표</div>
+    </div>
+    <table>
+      <thead><tr><th></th><th class="main-h">06-01 (월)</th><th>05-31 (일)</th><th>05-25 (월)</th></tr></thead>
+      <tbody>
+        <tr><td>광고비</td><td class="mv">17,579</td><td>18,133</td><td>15,375</td></tr>
+        <tr><td>NU</td><td class="mv">5,935</td><td>6,076</td><td>6,598</td></tr>
+        <tr><td>NUPU</td><td class="mv">82</td><td>71</td><td>84</td></tr>
+        <tr><td>NU Rev.</td><td class="mv">294</td><td>287</td><td>456</td></tr>
+        <tr><td>NPU</td><td class="mv">329</td><td>378</td><td>411</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <div class="ph" style="background:#F0F9FF; border-bottom-color:#BAE6FD;"><div class="ph-dot" style="background:#0EA5E9"></div><div class="ph-text" style="color:#0369A1;">리텐션 — iOS</div></div>
+    <table>
+      <thead><tr><th>구분</th><th>NU</th><th class="main-h">리텐션</th><th>vs 7일전</th></tr></thead>
+      <tbody>
+        <tr><td>D+1 &nbsp;<span style="color:#9CA3AF;font-weight:500;">05-31 (일)</span></td><td>723</td><td class="mv">45.5%</td><td class="up">▲1.1%p</td></tr>
+        <tr><td>D+7 &nbsp;<span style="color:#9CA3AF;font-weight:500;">05-25 (월)</span></td><td>750</td><td class="mv">21.5%</td><td class="up">▲1.2%p</td></tr>
+        <tr><td>D+14 <span style="color:#9CA3AF;font-weight:500;">05-18 (월)</span></td><td>701</td><td class="mv">14.4%</td><td class="up">▲0.6%p</td></tr>
+        <tr><td>D+28 <span style="color:#9CA3AF;font-weight:500;">05-04 (월)</span></td><td>1,028</td><td class="mv">12.8%</td><td class="up">▲2.1%p</td></tr>
+        <tr><td>D+56 <span style="color:#9CA3AF;font-weight:500;">04-06 (월)</span></td><td>1,327</td><td class="mv">6.4%</td><td style="color:#9CA3AF;">0.0%p</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="legend"><div class="lsq" style="background:#5B21B6"></div>06-01 기준일</div>
+  <div class="legend"><div class="lsq" style="background:#D1D5DB"></div>비교일</div>
+  <span class="note">단위: USD</span>
+</div>
+
+</body>
+ </html>
